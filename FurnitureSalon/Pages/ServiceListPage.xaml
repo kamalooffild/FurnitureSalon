@@ -59,10 +59,14 @@
                                 <RowDefinition Height="50"/>
                             </Grid.RowDefinitions>
 
-                            <TextBlock Width="550" 
+                            <TextBlock Width="550" Margin="1"
                                        HorizontalAlignment="Left"
                                        Grid.Column="1" Grid.Row="0"
                                        Text="{Binding Name}"></TextBlock>
+                            <TextBlock Width="550" 
+                                       HorizontalAlignment="Right" Margin="1"
+                                       Grid.Column="1" Grid.Row="0"
+                                       Text="{Binding Description}"></TextBlock>
 
                             <StackPanel Orientation="Horizontal"
                                         Grid.Row="1" Grid.Column="1">

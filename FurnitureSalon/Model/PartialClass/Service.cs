@@ -17,11 +17,9 @@ namespace FurnitureSalon.Model
                 if (Discount == 0 || Discount == null)
                     return "";
                 else
-                    return $"* скидка {Discount * 100}%"; ;
+                    return $"* скидка {Discount * 1}%"; ;
             }
         }
-
-
 
         public decimal CostDiscount
         {

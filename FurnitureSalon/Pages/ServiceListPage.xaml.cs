@@ -24,7 +24,7 @@ namespace FurnitureSalon.Pages
         public ServiceListPage()
         {
             InitializeComponent();
-            LVService.ItemsSource = App.db.Service.Where(x => x.IsDelete == false).ToList();
+            LVService.ItemsSource = App.db.Service.Where(x => x.IsDelete != true).ToList();
 
         }
         private void EditBtn_Click(object sender, RoutedEventArgs e)

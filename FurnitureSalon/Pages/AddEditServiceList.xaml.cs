@@ -31,8 +31,7 @@ namespace FurnitureSalon.Pages
             _service = service;
             this.DataContext = _service;
             if (service.Id == 0) idSp.Visibility = Visibility.Collapsed;
-            _service.Discount *= 10;
-            service.Discount *= 10;
+
         }
 
         private void AddImageBtn_Click(object sender, RoutedEventArgs e)
@@ -60,32 +59,14 @@ namespace FurnitureSalon.Pages
 
         private void ClearBtn_Click(object sender, RoutedEventArgs e)
         {
-            idTb.Clear();
-            TitleTB.Clear();
+            IdTb.Clear();
+            TypeNameTB.Clear();
+            NameTB.Clear();
             CostTb.Clear();
-            DurationInSecondsTb.Clear();
-            DescriptionTb.Clear();
+            DeleteTb.Clear();
+            MaterialsTb.Clear();
             DiscountTb.Clear();
         }
 
-        private void LeftBtn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RightBtn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void AddIngBtn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void DeleteIngBtn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
