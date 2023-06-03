@@ -63,7 +63,7 @@
                                        HorizontalAlignment="Left"
                                        Grid.Column="1" Grid.Row="0"
                                        Text="{Binding Name}"></TextBlock>
-                            <TextBlock Width="550" 
+                            <TextBlock Width="200" TextWrapping="Wrap" 
                                        HorizontalAlignment="Right" Margin="1"
                                        Grid.Column="1" Grid.Row="0"
                                        Text="{Binding Description}"></TextBlock>
@@ -82,13 +82,13 @@
                             <StackPanel Orientation="Horizontal"
                                         Grid.Column="1"
                                         Grid.Row="3">
-                                <Button Height="30" 
+                                <Button Height="30"  Width="120" 
                                         x:Name="RecordBtn"
-                                        Click="RecordBtn_Click">запись на приём</Button>
-                                <Button Height="30" 
+                                        Click="RecordBtn_Click">запись</Button>
+                                <Button Height="30"  Width="120" 
                                         x:Name="EditBtn"
                                         Click="EditBtn_Click">редактировать</Button>
-                                <Button Height="30"
+                                <Button Height="30" Width="120" 
                                         x:Name="DeleteBtn"
                                         Click="DeleteBtn_Click">удалить</Button>
                             </StackPanel>
