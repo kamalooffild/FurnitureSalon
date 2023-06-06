@@ -105,6 +105,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ClientListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\FirstPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -143,6 +147,7 @@
     <Compile Include="Model\Order.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\PartialClass\Furniture.cs" />
     <Compile Include="Model\PartialClass\Service.cs" />
     <Compile Include="Model\Role.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -164,6 +169,9 @@
     </Compile>
     <Compile Include="Pages\AddEditServiceList.xaml.cs">
       <DependentUpon>AddEditServiceList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ClientListPage.xaml.cs">
+      <DependentUpon>ClientListPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\FirstPage.xaml.cs">
       <DependentUpon>FirstPage.xaml</DependentUpon>

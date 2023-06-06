@@ -54,7 +54,7 @@ namespace FurnitureSalon.Pages
             //    var byteimage = File.ReadAllBytes(fullpath);
             //    item.ImageByte = byteimage;
             //}
-            NavigationService.Navigate(new AddEditServiceList(new Furniture()));
+            NavigationService.Navigate(new AddEditFurnitureList(new Furniture()));
         }
         public void Refresh()
         {
@@ -81,7 +81,7 @@ namespace FurnitureSalon.Pages
             }
             if (TitleDiscriptionTb.Text.Length > 0)
             {
-                filterFurniture = filterFurniture.Where(x => x.Name.ToLower().StartsWith(TitleDiscriptionTb.Text.ToLower()) || x.Description.ToLower().StartsWith(TitleDiscriptionTb.Text.ToLower()));
+                filterFurniture = filterFurniture.Where(x => x.Name.ToLower().Contains(TitleDiscriptionTb.Text.ToLower()) || x.Name.ToLower().Contains(TitleDiscriptionTb.Text.ToLower()));
             }
             LVProduct.ItemsSource = filterFurniture.ToList();
             FilterCount.Text = filterFurniture.Count() + " из";
@@ -108,6 +108,5 @@ namespace FurnitureSalon.Pages
             //if (addClientService == null) return;
             //NavigationService.Navigate(new RecordingPage(addClientService));
         }
-    }
     }
 }

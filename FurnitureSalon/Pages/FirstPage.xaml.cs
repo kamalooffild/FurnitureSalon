@@ -27,12 +27,12 @@ namespace FurnitureSalon.Pages
 
         private void FurnitureListButton_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new ProductListPage());
         }
 
         private void ConsumerListButton_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new ClientListPage());
         }
 
         private void OrderListButton_Click(object sender, RoutedEventArgs e)
