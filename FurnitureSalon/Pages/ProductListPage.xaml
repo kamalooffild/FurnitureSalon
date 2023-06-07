@@ -17,8 +17,8 @@
             </Grid.RowDefinitions>
 
 
-            <StackPanel Orientation="Horizontal" Grid.Row="0">
-                <TextBlock>Сортировка</TextBlock>
+            <StackPanel Background="#FF310B85" Orientation="Horizontal" Grid.Row="0">
+                <TextBlock Foreground="White">Сортировка</TextBlock>
                 <ComboBox x:Name="SortCb" Width="150" Height="30" Margin="10" SelectionChanged="SortCb_SelectionChanged">
                     <ComboBoxItem>По умолчанию</ComboBoxItem>
                     <ComboBoxItem>По возрастанию</ComboBoxItem>
@@ -33,7 +33,7 @@
                     <ComboBoxItem>70 до 100%</ComboBoxItem>
                 </ComboBox>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Margin="80 00 0 0">Поиск</TextBlock>
+                    <TextBlock Foreground="White" Margin="80 00 0 0">Поиск</TextBlock>
                     <TextBox x:Name="TitleDiscriptionTb"
                          Height="30"  
                          TextChanged="TitleDiscriptionTb_TextChanged"></TextBox>
@@ -86,13 +86,13 @@
                                 <StackPanel Orientation="Horizontal"
                                         Grid.Column="1"
                                         Grid.Row="3">
-                                <Button Height="30"  Width="120" 
+                                <Button Foreground="White" Background="FF310B85" Height="30"  Width="120" 
                                         x:Name="RecordBtn"
                                         Click="RecordBtn_Click">в корзину</Button>
-                                    <Button Height="30"  Width="120" 
+                                    <Button Foreground="White" Background="FF310B85" Height="30"  Width="120" 
                                         x:Name="EditBtn"
                                         Click="EditBtn_Click">редактировать</Button>
-                                    <Button Height="30" Width="120" 
+                                    <Button Foreground="White" Background="FF310B85" Height="30" Width="120" 
                                         x:Name="DeleteBtn"
                                         Click="DeleteBtn_Click">удалить</Button>
                                 </StackPanel>
@@ -111,7 +111,7 @@
             </ListView>
             <StackPanel Grid.Row="2" 
                     Orientation="Horizontal">
-                <Button Height="30" 
+                <Button Foreground="White" Background="#FF310B85" Height="30" 
                     x:Name="AddBtn"
                     Click="AddBtn_Click">Добавить
                 </Button>

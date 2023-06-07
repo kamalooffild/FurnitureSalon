@@ -62,9 +62,9 @@ namespace FurnitureSalon.Pages
             if (SortCb.SelectedIndex > 0)
             {
                 if (SortCb.SelectedIndex == 1)
-                    filterFurniture = filterFurniture.OrderBy(x => x.CostDiscount);
+                    filterFurniture = filterFurniture.OrderBy(x => x.Name);
                 else if (SortCb.SelectedIndex == 2)
-                    filterFurniture = filterFurniture.OrderByDescending(x => x.CostDiscount);
+                    filterFurniture = filterFurniture.OrderByDescending(x => x.Name);
             }
             if (DiscountSortCb.SelectedIndex > 0)
             {

@@ -13,24 +13,24 @@
                   Text="Мебельный салон" FontSize="50"/>
         <StackPanel VerticalAlignment="Center">
 
-            <Button
+            <Button Foreground="White" Background="#FF310B85"
                 x:Name="FurnitureListButton"
                 VerticalAlignment="Center"
                 Width="200" Margin="5"      
                 Content="Список мебели"
                 Click="FurnitureListButton_Click" Cursor="Hand"/>
-            <Button x:Name="ServiceListButton"
+            <Button Foreground="White" Background="#FF310B85" x:Name="ServiceListButton"
                 VerticalAlignment="Center"
                 Width="200" Margin="5"
                 Content="Список услуг"
                 Click="ServiceListButton_Click" Cursor="Hand"/>
-            <Button
+            <Button Foreground="White" Background="#FF310B85"
                 x:Name="ConsumerListButton"
                 VerticalAlignment="Center"
                 Width="200" Margin="5"
                 Content="Список покупателей"
                 Click="ConsumerListButton_Click" Cursor="Hand"/>
-            <Button
+            <Button Foreground="White" Background="#FF310B85"
                 x:Name="OrderListButton"
                 VerticalAlignment="Center"
                 Width="200" Margin="5"
